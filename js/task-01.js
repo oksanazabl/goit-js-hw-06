@@ -1,5 +1,3 @@
-const liElem = document.querySelectorAll('li.item');
-console.log(`Number of categories: ${liElem.length}`);
 
 const ulElem = document.querySelectorAll('#categories>li');
 ulElem.forEach(Element => {
@@ -9,8 +7,8 @@ ulElem.forEach(Element => {
   );
 });
 
-
-
+const liElem = document.querySelectorAll("li.item");
+console.log(`Number of categories:${liElem.length}`);
 
 
 
