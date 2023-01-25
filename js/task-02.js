@@ -7,16 +7,15 @@ const ingredients = [
   'Condiments',
 ];
 
-const itemElem = document.querySelector('ul#ingredients');
+const itemList = document.querySelector('ul#ingredients');
 
-const listElem = ingredients.map(ingr => {
-  const itemListElem = document.createElement('li');
-  
-  itemListElem.textContent = ingr;
-  
-  return itemListElem;
-})
 
-console.log(itemElem);
+const listEl = ingredients.map(item => {
+  const listElemLi = document.createElement('li')
 
-itemElem.append(...listElem);
+  listElemLi.textContent = item;
+  return listElemLi;
+});
+ console.log(itemList)
+itemList.append(...listEl)
+
