@@ -4,7 +4,7 @@ const nameNew = document.querySelector('#name-output');
 input.addEventListener('input', onInput);
 
 function onInput(event) {
-    console.log(event.currentTarget.value);
+   
     nameNew.textContent = event.currentTarget.value;
-
+ console.log(event.currentTarget.value);
 }
