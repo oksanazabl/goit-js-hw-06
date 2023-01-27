@@ -1,4 +1,5 @@
 let valueStart = 0;
+
 const counterValue = document.querySelector("#value");
 const btnMore = document.querySelector("#counter").firstElementChild;
 const btnLess = document.querySelector("#counter").lastElementChild;
