@@ -7,15 +7,9 @@ const ingredients = [
   'Condiments',
 ];
 
-const itemList = document.querySelector('ul#ingredients');
+const list = document.querySelector('#ingredients');
 
+const murkup = ingredients.map(ingredient => `<li>${ingredient}</li>`).join("")
+list.innerHTML = murkup;
 
-const listEl = ingredients.map(item => {
-  const listElemLi = document.createElement('li')
-
-  listElemLi.textContent = item;
-  return listElemLi;
-});
- console.log(itemList)
-itemList.append(...listEl)
 
