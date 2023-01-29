@@ -4,12 +4,10 @@ const inputTextLength = input.dataset.length;
 // console.log(input)
 const inputText = () => {
     if (input.value.length === Number(inputTextLength)) {
-        input.classList.remove(`invalid`)
-        input.classList.add(`valid`)
-        return;
+        
+        input.setAttribute('class', 'valid');       
     } else {
-         input.classList.remove(`valid`)
-        input.classList.add(`invalid`)
+        input.setAttribute('class', 'invalid');
     }
 }
 
