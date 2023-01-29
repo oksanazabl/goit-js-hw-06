@@ -5,6 +5,7 @@ input.addEventListener('input', onInput);
 
 function onInput(event) {
    
-    nameNew.textContent = event.currentTarget.value;
- console.log(event.currentTarget.value);
+    nameNew.textContent =
+        event.currentTarget.value.length !== 0 ? event.currentTarget.value : "Anonimus";
+    console.log(event.currentTarget.value);
 }
