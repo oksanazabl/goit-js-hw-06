@@ -1,3 +1,4 @@
+
 const [input, btnCreate, btnDestroy] = [
   ...document.querySelector("#controls").children,
 ];
@@ -27,7 +28,7 @@ const createBoxes = (amount) => {
   elem.boxes.append(...arrey);
 }
 
-elem.btnCreate.addEventListener('click', () => createBoxes(+elem.input.value));
+elem.btnCreate.addEventListener('click', createBoxes);
 elem.btnDestroy.addEventListener('click', () => {
   elem.input.value = "";
   elem.boxes.innerHTML = "";
