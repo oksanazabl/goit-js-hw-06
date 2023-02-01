@@ -18,7 +18,7 @@ const createBoxes = (amount) => {
   const arrey = [];
   let size = 30;
   elem.boxes.innerHTML = "";
-  for (let i = 0; i < amount; i = +1){
+  for (let i = 0; i < amount; i +=1){
     const div = document.createElement('div');
     div.style.width = div.style.height = size +"px";
     div.style.backgroundColor = getRandomHexColor();
@@ -28,7 +28,8 @@ const createBoxes = (amount) => {
   elem.boxes.append(...arrey);
 }
 
-elem.btnCreate.addEventListener('click', createBoxes);
+elem.btnCreate.addEventListener('click', () =>createBoxes(+elem.input.value));
+
 elem.btnDestroy.addEventListener('click', () => {
   elem.input.value = "";
   elem.boxes.innerHTML = "";
